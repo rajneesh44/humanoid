@@ -14,12 +14,12 @@ q.start(12.5)
 try:
     while True:
         p.ChangeDutyCycle(7.5)  # turn towards 90 degree
-        q.ChangeDutyCycle(2.5)
-        time.sleep(1) # sleep 1 second
-        p.ChangeDutyCycle(12.5)  # turn towards 0 degree
         q.ChangeDutyCycle(7.5)
         time.sleep(1) # sleep 1 second
-        p.ChangeDutyCycle(7.5) # turn towards 180 degree
+        p.ChangeDutyCycle(2.5)  # turn towards 0 degree
+        q.ChangeDutyCycle(2.5)
+        time.sleep(1) # sleep 1 second
+        p.ChangeDutyCycle(12.5) # turn towards 180 degree
         q.ChangeDutyCycle(12.5)
         time.sleep(1) # sleep 1 second 
 except KeyboardInterrupt:
